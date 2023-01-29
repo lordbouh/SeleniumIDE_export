@@ -1,0 +1,107 @@
+{
+  "id": "ecb43bef-c3ae-412a-9587-aee016db09b7",
+  "version": "2.0",
+  "name": "Sf",
+  "url": "https://skillfactory.ru",
+  "tests": [{
+    "id": "5d0bf2ad-d3dc-4b0f-ab14-7a33b50501b6",
+    "name": "Num1",
+    "commands": [{
+      "id": "f28112eb-589d-44fa-9d8e-1b721addbbc6",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7a66b029-ee4c-4de1-bc2e-058313577fdd",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1616x876",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "47cbce56-af47-448d-9498-f2eb2d7a1f28",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Все курсы",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2360c795-1873-4cfe-aa62-9bbff07dad2d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Все курсы",
+      "targets": [
+        ["linkText=Все курсы", "linkText"],
+        ["css=.tn-elem__4567460551563736040421 a", "css:finder"],
+        ["xpath=//a[contains(text(),'Все курсы')]", "xpath:link"],
+        ["xpath=//div[@id='rec456746055']/div/div/div[9]/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://skillfactory.ru/courses')])[19]", "xpath:href"],
+        ["xpath=//div[9]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Все курсы')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a691634e-388f-4f9f-8f21-ee4c2e3b5cc8",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Программирование",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "42dd93bf-3187-450b-846f-2cd41fc75750",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Программирование",
+      "targets": [
+        ["linkText=Программирование", "linkText"],
+        ["css=.t976__list-item:nth-child(3) > .t976__menu-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Программирование')]", "xpath:link"],
+        ["xpath=//div[@id='rec520657663']/div/div/div/div/div[3]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://skillfactory.ru/courses/programmirovanie')])[2]", "xpath:href"],
+        ["xpath=//div[3]/div/div/div/div/div[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "184d3689-c238-4cd6-909b-ab126d4df548",
+      "comment": "",
+      "command": "click",
+      "target": "css=.tn-elem__5205735261652779744723 > .tn-atom",
+      "targets": [
+        ["css=.tn-elem__5205735261652779744723 > .tn-atom", "css:finder"],
+        ["xpath=//div[@id='rec520573526']/div/div/div[41]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://skillfactory.ru/start-it-specialist-proforientaciya')])[2]", "xpath:href"],
+        ["xpath=//div[41]/a", "xpath:position"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win6355",
+      "windowTimeout": 2000
+    }, {
+      "id": "fc408ce1-7839-4fda-b96e-a0fea0265d69",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win6355}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ede5906e-c19b-4db8-8d10-68cdbf98f18b",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,1000)",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "20d993d3-e44f-4205-a365-77eb88996a40",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["5d0bf2ad-d3dc-4b0f-ab14-7a33b50501b6"]
+  }],
+  "urls": ["https://skillfactory.ru/"],
+  "plugins": []
+}
